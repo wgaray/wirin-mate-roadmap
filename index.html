@@ -120,7 +120,7 @@
 
     <header class="flex flex-col items-center mb-20">
         <div class="logo-container mb-8 floating">
-            <img src="Wirin-Front/src/assets/wirin-logo.svg" alt="WirinMate Logo" class="mx-auto" onerror="this.style.display='none'; document.getElementById('logo-text').style.display='block'">
+            <img src="wirin-logo.svg" alt="WirinMate Logo" class="mx-auto" onerror="this.style.display='none'; document.getElementById('logo-text').style.display='block'">
             <h1 id="logo-text" class="hidden text-5xl font-black tracking-tighter text-gray-900">wirin<span class="text-[#FF4D4D]">mate</span></h1>
         </div>
         <div class="text-center">
@@ -161,11 +161,11 @@
         <div class="glass p-10 flex flex-col justify-center">
             <h3 class="text-xs uppercase tracking-[0.2em] text-gray-400 mb-4 font-extrabold">Frontend UI</h3>
             <div class="flex justify-between items-end mb-3">
-                <span class="text-4xl font-black text-gray-900">72%</span>
+                <span class="text-4xl font-black text-gray-900">76%</span>
                 <span class="text-xs font-bold text-gray-600 uppercase">Tauri / React</span>
             </div>
             <div class="progress-bar-container">
-                <div class="progress-fill" style="width: 72%"></div>
+                <div class="progress-fill" style="width: 76%"></div>
             </div>
         </div>
     </div>
@@ -176,34 +176,34 @@
         <p class="text-center text-sm text-gray-500 font-medium mb-10">Shipped in the last sprint</p>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             <div class="glass p-5 text-center">
+                <div class="text-[10px] font-black tracking-[0.2em] text-red-500 uppercase mb-2">Automation</div>
+                <div class="text-sm font-extrabold text-gray-900 leading-tight">Touch / Latch + GPU Overlay</div>
+                <div class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-2">W / R Engine Complete</div>
+            </div>
+            <div class="glass p-5 text-center">
+                <div class="text-[10px] font-black tracking-[0.2em] text-blue-500 uppercase mb-2">Timeline</div>
+                <div class="text-sm font-extrabold text-gray-900 leading-tight">Tempo & Time-Sig Maps</div>
+                <div class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-2">Global · Per-Bar</div>
+            </div>
+            <div class="glass p-5 text-center">
+                <div class="text-[10px] font-black tracking-[0.2em] text-red-500 uppercase mb-2">Editor</div>
+                <div class="text-sm font-extrabold text-gray-900 leading-tight">Key & Chord Tracks</div>
+                <div class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-2">Bar / Key Pickers</div>
+            </div>
+            <div class="glass p-5 text-center">
                 <div class="text-[10px] font-black tracking-[0.2em] text-blue-500 uppercase mb-2">Engine</div>
                 <div class="text-sm font-extrabold text-gray-900 leading-tight">Backend Undo / Redo Bridge</div>
                 <div class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-2">Memento Pattern</div>
             </div>
             <div class="glass p-5 text-center">
-                <div class="text-[10px] font-black tracking-[0.2em] text-red-500 uppercase mb-2">Automation</div>
-                <div class="text-sm font-extrabold text-gray-900 leading-tight">Sample-Accurate W / R Engine</div>
-                <div class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-2">Vol · Pan · Mute · Solo</div>
-            </div>
-            <div class="glass p-5 text-center">
-                <div class="text-[10px] font-black tracking-[0.2em] text-blue-500 uppercase mb-2">Editor</div>
-                <div class="text-sm font-extrabold text-gray-900 leading-tight">Piano Roll + Velocity Lane</div>
-                <div class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-2">WebGPU Rendered</div>
-            </div>
-            <div class="glass p-5 text-center">
-                <div class="text-[10px] font-black tracking-[0.2em] text-red-500 uppercase mb-2">Tracks</div>
-                <div class="text-sm font-extrabold text-gray-900 leading-tight">FX & Group Track Types</div>
-                <div class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-2">VCA-Style Routing</div>
-            </div>
-            <div class="glass p-5 text-center">
-                <div class="text-[10px] font-black tracking-[0.2em] text-blue-500 uppercase mb-2">Editing</div>
+                <div class="text-[10px] font-black tracking-[0.2em] text-red-500 uppercase mb-2">Editing</div>
                 <div class="text-sm font-extrabold text-gray-900 leading-tight">E2E Resize (Audio + MIDI)</div>
                 <div class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-2">Sample-Accurate</div>
             </div>
             <div class="glass p-5 text-center">
-                <div class="text-[10px] font-black tracking-[0.2em] text-red-500 uppercase mb-2">Telemetry</div>
-                <div class="text-sm font-extrabold text-gray-900 leading-tight">WIRN Protocol v2</div>
-                <div class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-2">+ Per-Track State</div>
+                <div class="text-[10px] font-black tracking-[0.2em] text-blue-500 uppercase mb-2">Tracks</div>
+                <div class="text-sm font-extrabold text-gray-900 leading-tight">FX & Group Track Types</div>
+                <div class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-2">VCA-Style Routing</div>
             </div>
         </div>
     </section>
@@ -252,8 +252,8 @@
                     <li><span class="tick">✔</span> Metronome Handling</li>
                     <li><span class="tick">✔</span> Audio / MIDI / FX / Group Track Types (VCA Groups)</li>
                     <li><span class="tick">✔</span> Master Stereo Bus Sync</li>
-                    <li class="text-blue-500 font-bold">• Automation System — W/R Engine, GPU Overlay, Touch/Latch (In Progress)</li>
-                    <li class="text-blue-500 font-bold">• Global Tempo & Time-Signature Maps (Planning)</li>
+                    <li><span class="tick">✔</span> Automation System — W/R Engine, GPU Overlay, Touch/Latch</li>
+                    <li><span class="tick">✔</span> Global Tempo & Time-Signature Maps</li>
                     <li class="text-blue-500 font-bold">• High-Fidelity Audio Export / Bouncing (FFI Pending)</li>
                     <li class="text-blue-500 font-bold">• Project "Snapshots" & Version Branching</li>
                 </ul>
