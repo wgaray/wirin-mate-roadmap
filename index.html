@@ -120,7 +120,7 @@
 
     <header class="flex flex-col items-center mb-20">
         <div class="logo-container mb-8 floating">
-            <img src="wirin-logo.svg" alt="WirinMate Logo" class="mx-auto" onerror="this.style.display='none'; document.getElementById('logo-text').style.display='block'">
+            <img src="Wirin-Front/src/assets/wirin-logo.svg" alt="WirinMate Logo" class="mx-auto" onerror="this.style.display='none'; document.getElementById('logo-text').style.display='block'">
             <h1 id="logo-text" class="hidden text-5xl font-black tracking-tighter text-gray-900">wirin<span class="text-[#FF4D4D]">mate</span></h1>
         </div>
         <div class="text-center">
@@ -139,8 +139,19 @@
         <div class="glass p-10 flex flex-col justify-center">
             <h3 class="text-xs uppercase tracking-[0.2em] text-gray-400 mb-4 font-extrabold">Backend Core</h3>
             <div class="flex justify-between items-end mb-3">
-                <span class="text-4xl font-black text-gray-900">95%</span>
+                <span class="text-4xl font-black text-gray-900">96%</span>
                 <span class="text-xs font-bold text-blue-500 uppercase">C++ Engine</span>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-fill" style="width: 96%"></div>
+            </div>
+        </div>
+
+        <div class="glass p-10 flex flex-col justify-center">
+            <h3 class="text-xs uppercase tracking-[0.2em] text-gray-400 mb-4 font-extrabold">FFI Bridge</h3>
+            <div class="flex justify-between items-end mb-3">
+                <span class="text-4xl font-black text-gray-900">95%</span>
+                <span class="text-xs font-bold text-red-500 uppercase">Rust / CXX</span>
             </div>
             <div class="progress-bar-container">
                 <div class="progress-fill" style="width: 95%"></div>
@@ -148,24 +159,13 @@
         </div>
 
         <div class="glass p-10 flex flex-col justify-center">
-            <h3 class="text-xs uppercase tracking-[0.2em] text-gray-400 mb-4 font-extrabold">FFI Bridge</h3>
-            <div class="flex justify-between items-end mb-3">
-                <span class="text-4xl font-black text-gray-900">93%</span>
-                <span class="text-xs font-bold text-red-500 uppercase">Rust / CXX</span>
-            </div>
-            <div class="progress-bar-container">
-                <div class="progress-fill" style="width: 93%"></div>
-            </div>
-        </div>
-
-        <div class="glass p-10 flex flex-col justify-center">
             <h3 class="text-xs uppercase tracking-[0.2em] text-gray-400 mb-4 font-extrabold">Frontend UI</h3>
             <div class="flex justify-between items-end mb-3">
-                <span class="text-4xl font-black text-gray-900">76%</span>
+                <span class="text-4xl font-black text-gray-900">82%</span>
                 <span class="text-xs font-bold text-gray-600 uppercase">Tauri / React</span>
             </div>
             <div class="progress-bar-container">
-                <div class="progress-fill" style="width: 76%"></div>
+                <div class="progress-fill" style="width: 82%"></div>
             </div>
         </div>
     </div>
@@ -176,34 +176,34 @@
         <p class="text-center text-sm text-gray-500 font-medium mb-10">Shipped in the last sprint</p>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             <div class="glass p-5 text-center">
-                <div class="text-[10px] font-black tracking-[0.2em] text-red-500 uppercase mb-2">Automation</div>
-                <div class="text-sm font-extrabold text-gray-900 leading-tight">Touch / Latch + GPU Overlay</div>
-                <div class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-2">W / R Engine Complete</div>
+                <div class="text-[10px] font-black tracking-[0.2em] text-red-500 uppercase mb-2">Start Menu</div>
+                <div class="text-sm font-extrabold text-gray-900 leading-tight">New Hero Start Screen</div>
+                <div class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-2">Templates · Recents</div>
             </div>
             <div class="glass p-5 text-center">
-                <div class="text-[10px] font-black tracking-[0.2em] text-blue-500 uppercase mb-2">Timeline</div>
-                <div class="text-sm font-extrabold text-gray-900 leading-tight">Tempo & Time-Sig Maps</div>
-                <div class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-2">Global · Per-Bar</div>
+                <div class="text-[10px] font-black tracking-[0.2em] text-blue-500 uppercase mb-2">Plugins</div>
+                <div class="text-sm font-extrabold text-gray-900 leading-tight">High-Performance VST Scanner</div>
+                <div class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-2">Async · Cached</div>
             </div>
             <div class="glass p-5 text-center">
-                <div class="text-[10px] font-black tracking-[0.2em] text-red-500 uppercase mb-2">Editor</div>
-                <div class="text-sm font-extrabold text-gray-900 leading-tight">Key & Chord Tracks</div>
-                <div class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-2">Bar / Key Pickers</div>
+                <div class="text-[10px] font-black tracking-[0.2em] text-red-500 uppercase mb-2">Hardware</div>
+                <div class="text-sm font-extrabold text-gray-900 leading-tight">Hardware Config Modal</div>
+                <div class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-2">Devices · Routing</div>
+            </div>
+            <div class="glass p-5 text-center">
+                <div class="text-[10px] font-black tracking-[0.2em] text-blue-500 uppercase mb-2">Notifications</div>
+                <div class="text-sm font-extrabold text-gray-900 leading-tight">Bell + Toast Host System</div>
+                <div class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-2">Native Bridge</div>
+            </div>
+            <div class="glass p-5 text-center">
+                <div class="text-[10px] font-black tracking-[0.2em] text-red-500 uppercase mb-2">Theme</div>
+                <div class="text-sm font-extrabold text-gray-900 leading-tight">Theme Selector Engine</div>
+                <div class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-2">Dark · Light · Custom</div>
             </div>
             <div class="glass p-5 text-center">
                 <div class="text-[10px] font-black tracking-[0.2em] text-blue-500 uppercase mb-2">Engine</div>
-                <div class="text-sm font-extrabold text-gray-900 leading-tight">Backend Undo / Redo Bridge</div>
-                <div class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-2">Memento Pattern</div>
-            </div>
-            <div class="glass p-5 text-center">
-                <div class="text-[10px] font-black tracking-[0.2em] text-red-500 uppercase mb-2">Editing</div>
-                <div class="text-sm font-extrabold text-gray-900 leading-tight">E2E Resize (Audio + MIDI)</div>
-                <div class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-2">Sample-Accurate</div>
-            </div>
-            <div class="glass p-5 text-center">
-                <div class="text-[10px] font-black tracking-[0.2em] text-blue-500 uppercase mb-2">Tracks</div>
-                <div class="text-sm font-extrabold text-gray-900 leading-tight">FX & Group Track Types</div>
-                <div class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-2">VCA-Style Routing</div>
+                <div class="text-sm font-extrabold text-gray-900 leading-tight">Warp Cache & Render</div>
+                <div class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-2">Time-Stretch Caching</div>
             </div>
         </div>
     </section>
@@ -255,7 +255,8 @@
                     <li><span class="tick">✔</span> Automation System — W/R Engine, GPU Overlay, Touch/Latch</li>
                     <li><span class="tick">✔</span> Global Tempo & Time-Signature Maps</li>
                     <li class="text-blue-500 font-bold">• High-Fidelity Audio Export / Bouncing (FFI Pending)</li>
-                    <li class="text-blue-500 font-bold">• Project "Snapshots" & Version Branching</li>
+                    <li class="text-blue-500 font-bold">• Musical Mode</li>
+                    <li class="opacity-50"><span class="mr-2">•</span> Project "Snapshots" & Version Branching</li>
                 </ul>
             </div>
 
@@ -274,44 +275,45 @@
                     <li><span class="tick">✔</span> Playhead Synchronization Optimization</li>
                     <li><span class="tick">✔</span> WIRN Binary Protocol v2 (Extended Per-Track State)</li>
                     <li><span class="tick">✔</span> Shared WebGPU Device & Render-Pass Batching</li>
-                    <li class="text-blue-500 font-bold">• Sub-frame Interpolation (120fps+)</li>
-                    <li class="text-blue-500 font-bold">• Zero-Lag Audio Path Buffering</li>
-                    <li class="text-blue-500 font-bold">• Cross-Process Audio Latency Profiler</li>
+                    <li class="opacity-50"><span class="mr-2">•</span> Sub-frame Interpolation (120fps+)</li>
+                    <li class="opacity-50"><span class="mr-2">•</span> Zero-Lag Audio Path Buffering</li>
+                    <li class="opacity-50"><span class="mr-2">•</span> Cross-Process Audio Latency Profiler</li>
                 </ul>
             </div>
 
             <!-- Phase 3 -->
-            <div class="glass p-10 phase-card opacity-70 grayscale hover:grayscale-0 transition-all">
+            <div class="glass p-10 phase-card border-l-4 border-blue-500">
                 <div class="flex items-center mb-6">
-                    <span class="bg-gray-100 text-gray-600 px-4 py-1 rounded-full text-[10px] font-black mr-4 uppercase tracking-tighter">Future Vision</span>
+                    <span class="bg-blue-100 text-blue-600 px-4 py-1 rounded-full text-[10px] font-black mr-4 uppercase tracking-tighter">In Progress</span>
                     <h3 class="text-2xl font-extrabold text-gray-900">Phase 3: VST3/LV2 Hosting & Plugin Browser</h3>
                 </div>
                 <ul class="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-8 text-sm text-gray-600 font-medium">
-                    <li>• High-Performance Plugin Scanner</li>
-                    <li>• VST3 / LV2 Hosting Engine</li>
-                    <li>• Plugin Library Handling & Metadata</li>
-                    <li>• VST Instruments Visualization</li>
-                    <li>• VST Inserts Audio & UI Integration</li>
-                    <li>• Plugin Sandboxing (Crash Protection)</li>
-                    <li class="opacity-50">• Waveform Summary Serialization</li>
+                    <li><span class="tick">✔</span> High-Performance Plugin Scanner</li>
+                    <li class="opacity-50"><span class="mr-2">•</span> VST3 / LV2 Hosting Engine</li>
+                    <li class="opacity-50"><span class="mr-2">•</span> Plugin Library Handling & Metadata</li>
+                    <li class="opacity-50"><span class="mr-2">•</span> VST Instruments Visualization</li>
+                    <li class="opacity-50"><span class="mr-2">•</span> VST Inserts Audio & UI Integration</li>
+                    <li class="opacity-50"><span class="mr-2">•</span> Plugin Sandboxing (Crash Protection)</li>
+                    <li class="opacity-50"><span class="mr-2">•</span> Waveform Summary Serialization</li>
                 </ul>
             </div>
 
             <!-- Phase 4 -->
-            <div class="glass p-10 phase-card opacity-70 grayscale hover:grayscale-0 transition-all">
+            <div class="glass p-10 phase-card border-l-4 border-blue-500">
                 <div class="flex items-center mb-6">
-                    <span class="bg-gray-100 text-gray-600 px-4 py-1 rounded-full text-[10px] font-black mr-4 uppercase tracking-tighter">Future Vision</span>
+                    <span class="bg-blue-100 text-blue-600 px-4 py-1 rounded-full text-[10px] font-black mr-4 uppercase tracking-tighter">In Progress</span>
                     <h3 class="text-2xl font-extrabold text-gray-900">Phase 4: The Visual Rebirth</h3>
                 </div>
                 <ul class="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-8 text-sm text-gray-600 font-medium">
-                    <li>• Redesign of Splash Screen & New Start Menu</li>
-                    <li>• Audio Connections & Hardware Routing Menu</li>
-                    <li>• Global Settings & Configuration Redesign</li>
-                    <li>• Mixer Console & Timeline Grid Overhaul</li>
-                    <li>• Custom Theme Engine (Dark/Light Mode)</li>
-                    <li>• Dynamic Motion System (Framer Motion)</li>
-                    <li>• Spectral Mixer Overlay (Real-time FFT)</li>
-                    <li>• Surround / Multichannel Pan Visualizer</li>
+                    <li><span class="tick">✔</span> Redesign of Splash Screen & New Start Menu</li>
+                    <li class="opacity-50"><span class="mr-2">•</span> Audio Connections & Hardware Routing Menu</li>
+                    <li><span class="tick">✔</span> Global Settings & Configuration Redesign</li>
+                    <li class="opacity-50"><span class="mr-2">•</span> Mixer Console & Timeline Grid Overhaul</li>
+                    <li><span class="tick">✔</span> Custom Theme Engine (Dark/Light Mode)</li>
+                    <li class="opacity-50"><span class="mr-2">•</span> Dynamic Motion System (Framer Motion)</li>
+                    <li class="opacity-50"><span class="mr-2">•</span> Spectral Mixer Overlay (Real-time FFT)</li>
+                    <li class="opacity-50"><span class="mr-2">•</span> Surround / Multichannel Pan Visualizer</li>
+                    <li class="opacity-50"><span class="mr-2">•</span> Notification System</li>
                 </ul>
             </div>
 
